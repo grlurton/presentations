@@ -176,7 +176,7 @@ app.views = app.views || {}, app.Settings = app.Settings || {}, app.Settings.deb
 					config: 'TeX-AMS_HTML-full'
 				},
         dependencies: [
-            {src: "reveal-js/js/plugin/zoom-js/zoom.js", async: !0} ,
+            {src: "plugin/zoom-js/zoom.js", async: !0} ,
             { src: 'plugin/math/math.js', async: true } ,
             { src: 'plugin/notes/notes.js', async: true }]
     })
