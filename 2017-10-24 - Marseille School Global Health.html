@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Adapting HMIS Methods - Phd Proposal</title>
+
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<meta name="description" content="How do we produce knowledge in Global Health">
+	<meta name="author" content="Grégoire Lurton">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!--
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/serif.css" id="theme">-->
+
+	<!--	 Theme used for syntax highlighting of code
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+-->
+	<!--Personal css
+	<link rel="stylesheet" href="css/custom.css">
+-->
+
+	<link rel="stylesheet" href="css/430c62aa.vendor.css" />
+	<link rel="stylesheet" href="css/2862b4fa.main.css" />
+	<!------------------------------------------------------------------------------------------------------------------->
+	<!-- Printing and PDF exports -->
+
+	<!--
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+-->
+	<script src="js/additional/modernizr.js">
+		< /script/
+
+		<
+		script src = "js/additional/dni5qfv.js" >
+	</script>
+	<script>
+		try {
+			Typekit.load();
+		} catch (e) {}
+	</script>
+</head>
+
+<body>
+	<div class="reveal main-container">
+		<div class="slides">
+			<section id="title_slide" class="s1 home"  data-background-color="grey">
+				<div class="layer">
+					<div class="full vertical-middle">
+						<div class="wrapper">
+							<div class="main-frame vertical-middle big-border">
+								<div class="wrapper p20">
+									<h2>What know<br/>Information Systems Data</h2>
+
+									<h3 class="reveal-only">First results</h3>
+
+									<div class="authors">— Grégoire Lurton</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="notes">
+				<ul>
+				<li>PhD in Global Health Metrics</li>
+				<li>Quick Word on GBD / DALYs</li>
+				<li>Will cover most of paper, but not all</li>
+				<li>Ask for specific examples of work</li>
+				</ul>
+				</aside>
+			</section>
+			<!--------------------------------------------------------------------------------------------------------------------->
+
+			<!--------------------------------------------------------------------------------------------------------------------->
+			<section data-transition='none'>
+				<div class="layer">
+					<div class="full vertical-middle">
+						<div class="wrapper">
+							<div class="main-frame vertical-middle">
+								<div class="wrapper">
+									<h3>Quick Positioning</h3>
+									<div class="half text-center"   style="font-size:20px">
+										<article class="">
+										<h4>Research of a Global Health Metrician</h4>
+										<ul>
+										<li>Statistical Development</li>
+										<p style="font-size:25px">Core of my current work. Research on methods to measure different dimensions of health</p>
+										<li>Tool Development</li>
+										<p style="font-size:25px">Short term consulting projects</p>
+										<li>Statistical Infrastructure Development</li>
+										<p style="font-size:25px">5 years of HIV monitoring strengthening in Guinea, Mali, Niger and Sierra Leone with Solthis</p>
+										</ul>
+										</article>
+									</div>
+									<div class="half text-center"   style="font-size:20px">
+										<article class="">
+										<h4>Present research questions</h4>
+										<ol>
+										<li>How do we create independent and well perfoming statistical infrastructures in low resource health systems ?</li>
+										<li>How can we offer an internal critic framework for statistical knowledge in these systems</li>
+										</ol>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<aside class="notes">
+				<ul>
+					<li>Ask for specific examples of work</li>
+					<li>Underlying questions in most of my work</li>
+					<li>Confrontation to STS / SS is stimulating but seldom used</li>
+				</ul>
+				</aside>
+				</section>
+
+
+			<!--------------------------------------------------------------------------------------------------------------------->
+			<section id="data_problem" class="s8 chapter chapter-title" data-background="figure/SPIS_maradi.png">
+				<div class="layer">
+					<div class="full vertical-middle">
+						<div class="wrapper">
+							<div class="main-frame vertical-middle big-border">
+								<div class="wrapper text-center">
+									<h2 class="reveal-only">Evidence Based Policy ?</h2>
+									<p style="font-size:20px">Much of the material remains unprocessed, or, if processed, unanalyzed, or, if analyzed, not read, or, if read, not used or acted upon. Only a minuscule proportion, if any, of the findings affect policy and they are usually a few simple totals.
+									<br/>—Robert Chambers, 1983</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-transition="none">
+				<div class="layer">
+					<div class="full vertical-middle">
+						<div class="wrapper">
+							<div class="main-frame vertical-middle">
+								<div class="wrapper">
+									<h3>Modes of Local - Global Interaction ?</h3>
+									<article class="">
+										<div class="table" style="text-align:justify">
+											<style>
+												table,
+												th,
+												td {
+													border: 1px solid black;
+													padding-right: 10px;
+													padding-left: 10px;
+												}
+											</style>
+											<table width="100%" valign="middle">
+												<thead>
+													<tr>
+														<th></th>
+														<th colspan="1" align="center">Local</th>
+														<th colspan="1" align="center">Global</th>
+														<th colspan="1" align="center">Local</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Back and forth</td>
+														<td>Develops Policy</td>
+														<td>Provides funding</td>
+														<td>Documents Policy Results</td>
+													</tr>
+													<tr class="fragment" data-fragment-index="1">
+														<td>Compiling and transmission</td>
+														<td>Documents Policy Results</td>
+														<td>Compiles Best practices and formulates recommentation </td>
+														<td>Integrates best practices from other countries </td>
+													</tr>
+													<tr class="fragment" data-fragment-index="2">
+														<td>Knowledge Transformation</td>
+														<td>Produces local epidemiological Data</td>
+														<td>Models Global Burden of Disease</td>
+														<td>Investigates dark spots of GBD</td>
+													</tr>
+													<tr class="fragment" data-fragment-index="3">
+														<td>Methods update</td>
+														<td>Designs local method</td>
+														<td>Integrates local methods in global practices</td>
+														<td>Chooses appropriate methods</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--------------------------------------------------------------------------------------------------------------------->
+			<section>
+				<div class="layer">
+							<div class="main-frame vertical-middle">
+								<div class="wrapper">
+										<h3>Asymetry in interaction</h3>
+										<div class="left" style="width:48%;text-align:justify;float:left;font-size:30px">
+											<h4>Some examples : </h4>
+											<ul>
+											<li>Academic Legitimity</li>
+											<p style="font-size:25px">Most big academic players in the Global North. </p>
+											<li>Technical Role</li>
+											<p style="font-size:25px">Norms and classifications produced in the Global North</p>
+											<li>Financial Power</li>
+											<p style="font-size:25px">Global Fund will fund 5 years of HIV program if you commit to report a couple "simple" indicators</p>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+		</section>
+		<!--------------------------------------------------------------------------------------------------------------------->
+						<section id="offer_cant_refuse" data-background='black'>
+							<div class="layer">
+								<div class="full vertical-middle">
+									<div class="wrapper text-center">
+										<img data-src="figure/offer_cant_refuse.gif" height="100%" align="middle" />
+									</div>
+								</div>
+							</div>
+						</section>
+		<!--------------------------------------------------------------------------------------------------------------------->
+						<section id="glez_drawing" data-background="#A1D3EA">
+							<div class="layer">
+								<div class="full vertical-middle">
+									<div class="wrapper text-center">
+										<img data-src="figure/Glez_documents.jpg" height="100%" align="middle" />
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="LTFU Process">
+							<div class="layer">
+								<div class="full horizontal-middle">
+									<div class="wrapper text-center">
+									<h3>Lost to Follow-up<h3>
+					<img src="figure/graph_ltfu_process.png"   width="100%" align="middle" /></iframe>
+					</div>
+				</div>
+			</div>
+			<aside class="notes">
+			<ul>
+			<li>Disruptive of health worker's work</li>
+			<li>No performing HIS</li>
+			</ul>
+			</aside>
+			</section>
+
+			<section id="vivarium_simul">
+				<div class="layer">
+					<div class="full vertical-middle">
+						<div class="wrapper text-center">
+							<img data-src="figure/ltfu_vivarium_1.png" align="middle" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--------------------------------------------------------------------------------------------------------------------->
+			<section>
+				<div class="layer">
+					<div class="full vertical-middle">
+						<div class="wrapper">
+							<div class="main-frame vertical-middle">
+								<div class="wrapper">
+									<h3>Concept Transplantation - phase 1</h3>
+									<article class="">
+										<img src="figure\Ioannidis_1999.png" width="100%" align="center" />
+										<div class="right" style="font-size:20px;text-align:justify;float:center">
+											<p>&nbsp;</p>
+											<b>
+											"However, performing large studies in developing areas is challenging. One major problem is that many mothers and their infants are lost to follow-up."
+											</b>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="layer">
+					<div class="full vertical-middle">
+						<div class="wrapper">
+							<div class="main-frame vertical-middle">
+								<div class="wrapper">
+									<h3>Concept Transplantation - phase 1</h3>
+									<article class="">
+										<img src="figure\Lebouche_2006.png" width="90%" align="center" />
+										<div class="right" style="font-size:20px;text-align:justify;float:left">
+										<p>&nbsp;</p>
+											<b>
+											"However, little has been reported about patients who do not adhere to care, fail to attend their scheduled consultations, or are lost to follow-up. In most studies of patients on antiviral therapy only those lost to follow-up in clinical trials were considered."
+											</b>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="layer">
+					<div class="full vertical-middle">
+						<div class="wrapper">
+							<div class="main-frame vertical-middle">
+								<div class="wrapper">
+									<h3>LTFU litterature evolution</h3>
+									<article class="">
+										<img src="figure\yiannoutsos_2007.png" width="100%" align="center" />
+										<div class="right" style="font-size:20px;text-align:justify;float:left">
+										<p>&nbsp;</p>
+											<b>
+												"However, accurate estimates of patient survival and other clinical outcomes have been difficult to obtain, as they are significantly impacted by patient loss to follow-up."
+											</b>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="full vertical-middle">
+					<div class="wrapper">
+						<div class="main-frame vertical-middle">
+							<div class="wrapper">
+								<h3>LTFU litterature evolution</h3>
+								<article class="">
+									<img src="figure\brinkhof_2008.png" width="100%" align="center" />
+									<div class="right" style="font-size:20px;text-align:justify;float:left">
+									<p>&nbsp;</p>
+										<b>
+											"Loss to follow-up is an important problem both for the care of individual patients and the evaluation of antiretroviral treatment programmes in low- and middle-income countries."
+										</b>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="full vertical-middle">
+					<div class="wrapper">
+						<div class="main-frame vertical-middle">
+							<div class="wrapper">
+								<h3>LTFU litterature evolution</h3>
+								<article class="">
+									<img src="figure\mugavero.png" width="100%" align="center" />
+									<div class="right" style="font-size:20px;text-align:justify;float:left">
+									<p>&nbsp;</p>
+										<b>
+											"However, the degree to which different measures of retention are related to outcomes, and to one another, among the same sample of HIV-infected patients is largely unexplored."
+										</b>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!------------------------------------------------------------------------------------------------------->
+			<section>
+				<div class="full vertical-middle">
+					<div class="wrapper">
+						<div class="main-frame vertical-middle">
+							<div class="wrapper">
+								<h3>LTFU litterature evolution</h3>
+								<article class="">
+									<img src="figure\shepherd_2013.png" width="90%" align="center" />
+									<div class="right" style="font-size:20px;text-align:justify;float:left">
+									<p>&nbsp;</p>
+										<b>
+											"Our recommendations for LTF definition are to base the definition on the study/programmatic outcome of interest, available encounter data, and the cohort visit schedule. Except in the context of collaborative networks,we do not advocate a universal standard as the definition of LTF should depend on the intended application and the cohort(s) of study."
+										</b>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="layer">
+							<div class="main-frame vertical-middle">
+								<div class="wrapper">
+										<h3>Outcome for local statistical systems </h3>
+										<div class="left" style="width:48%;text-align:justify;float:left;font-size:30px">
+											<ul>
+											<li>Statistical Infrastructure</li>
+											<p style="font-size:25px">Not built, just ad-hoc systems with little local ownership </p>
+											<li>Division of computational work</li>
+											<p style="font-size:25px">Upside down, low skilled workers bear the burden of computation</p>
+											<li>Monitoring role</li>
+											<p style="font-size:25px">Not fulfilled, low validity</p>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+		</section>
+		<section>
+			<div class="layer">
+						<div class="main-frame vertical-middle">
+							<div class="wrapper">
+									<h3>From Norm to Aggregation</h3>
+									<div class="left" style="width:48%;text-align:justify;float:left;font-size:30px">
+										<ul>
+										<li>New computational Tools</li>
+										<p style="font-size:25px">Accessibility of powerful methods to understand complex systems (ex: Agend Based Modeling)</p>
+										<li>New Work Methods</li>
+										<p style="font-size:25px">Reproducible research methods allow tracking of data and computation methods, and reproducibility and adaptation by different actors</p>
+										<li>New models of collaborative work</li>
+										<p style="font-size:25px">Open Source software development, co-construction of output, flexible norm</p>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+	</section>
+		</div>
+		</div>
+			<!------------------------------------------------------------------------------------------------------->
+
+			<!-------------------------------------------------------------------------------------------------------------------->
+			<!-- slides -->
+			<!--------------------------------------------------------------------------------------------------------------------->
+			<!--------------------------------------------------------------------------------------------------------------------->
+			<div class="reveal-only custom-controls-wrapper custom-controls-wrapper-prev">
+				<div id="control-prev" class="custom-control navigate-prev">
+					<div class="layer bg bg-prev"></div>
+					<div class="arrow arrow-prev"></div>
+				</div>
+			</div>
+			<div class="reveal-only custom-controls-wrapper custom-controls-wrapper-next">
+				<div id="control-next" class="custom-control navigate-next">
+					<div class="layer bg bg-next"></div>
+					<div class="arrow arrow-next"></div>
+				</div>
+			</div>
+			<!-- reveal -->
+
+			<button class="btn" id="btn-menu">
+		    <div class="bg"></div>
+		    <div class="bar bar-top"></div>
+		    <div class="bar bar-middle"></div>
+		    <div class="bar bar-bottom"></div>
+			</button>
+
+			<div id="chapter-nav" class="nav-container">
+				<nav>
+					<!--<header>
+		            <a href="/fr/" class="nav-lang active">francais</a>
+		            <a href="/en/" class="nav-lang ">english</a>
+		        </header> -->
+					<a class="reveal-link" href="#/title_slide">
+						<div class="nav-title">
+							Making Global Health knowledge  <br>
+						</div>
+						<div class="nav-subtitle">
+						</div>
+						<div class="nav-authors">
+							— Grégoire Lurton
+						</div>
+					</a>
+
+					<div class="chapters">
+						<ul id="chapters-menu">
+							<li><a class="reveal-link" href="#/data_problem">Introduction</a></li>
+							<li><a class="reveal-link" href="#/data_definition">Data Definition</a></li>
+							<li><a class="reveal-link" href="#/data_hybrid">Data Hybridization</a></li>
+							<li><a class="reveal-link" href="#/data_monitoring">Data Monitoring</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<script src="js/e75e0958.vendor.js"></script>
+			<script src="js/5e415ea5.custom-reveal.js"></script>
+			<script src="js/6b08d094.app.js"></script>
+
+</body>
+
+</html>
