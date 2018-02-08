@@ -5,3 +5,5 @@ In this repo I store most of the presentation I've made for diverse event. Reuse
 2017-06-10: [Doctoral Seminar shared session](https://grlurton.github.io/presentations/2017-06%20Seminar%20Presentation.html)
 
 2017-10-24: [Marseille Interdisciplinary School on Global Health](https://grlurton.github.io/presentations/2017-10-24%20-%20Marseille%20School%20Global%20Health.html)
+
+[doctoral committee](https://grlurton.github.io/presentations/2017-05-23%20-%20Doctoral%20Committee%20Meeting.html
